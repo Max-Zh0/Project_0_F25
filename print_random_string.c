@@ -1,5 +1,4 @@
-
-
+#include "random.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -22,14 +21,14 @@ int main()
 
 {
     char *str;
-    size_t size =   ;  //specify a value for size of word
+    size_t size =  6 ;  //specify a value for size of word
 
 	/* seed the randomizer */
 	srand( (unsigned)time(NULL) );
 
 	printf("Today's random word: ");
-    str = rand_string_alloc(size );
-    printf("%s",str);
+    str = rand_string_alloc(size);
+    printf("%s\n",str);
     free (str);
     
 
